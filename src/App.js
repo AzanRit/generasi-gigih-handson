@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import gif from "./component/gift-data.js";
+import ImageWidget from "./component/image/index.js";
+import TitleWidget from "./component/title/index.js";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <input />
+      <button>Search</button>
+      <TitleWidget title={gif.title} />
+      <ImageWidget url={gif.url} />
     </div>
   );
-}
-
+};
 export default App;
